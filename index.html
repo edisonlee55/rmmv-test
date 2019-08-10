@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="user-scalable=no">
+        <link rel="icon" href="icon/icon.png" type="image/png">
+        <link rel="apple-touch-icon" href="icon/icon.png">
+        <link rel="stylesheet" type="text/css" href="fonts/gamefont.css">
+        <title>Test</title>
+    </head>
+    <body style="background-color: black">
+        <button id="fullscreenButton" onclick="openFullscreen(); document.getElementById('fullscreenButton').remove(); fullscreenLoaded = true;">Click here to load the game in fullscreen!</button>
+        <script type="text/javascript" src="js/libs/pixi.js"></script>
+        <script type="text/javascript" src="js/libs/pixi-tilemap.js"></script>
+        <script type="text/javascript" src="js/libs/pixi-picture.js"></script>
+        <script type="text/javascript" src="js/libs/fpsmeter.js"></script>
+        <script type="text/javascript" src="js/libs/lz-string.js"></script>
+        <script type="text/javascript" src="js/libs/iphone-inline-video.browser.js"></script>
+        <script type="text/javascript" src="js/rpg_core.js"></script>
+        <script type="text/javascript" src="js/rpg_managers.js"></script>
+        <script type="text/javascript" src="js/rpg_objects.js"></script>
+        <script type="text/javascript" src="js/rpg_scenes.js"></script>
+        <script type="text/javascript" src="js/rpg_sprites.js"></script>
+        <script type="text/javascript" src="js/rpg_windows.js"></script>
+        <script type="text/javascript" src="js/plugins.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <script>
+            /* Get the documentElement (<html>) to display the page in fullscreen */
+            var elem = document.documentElement;
+            
+            /* View in fullscreen */
+            function openFullscreen() {
+              if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+              } else if (elem.mozRequestFullScreen) { /* Firefox */
+                elem.mozRequestFullScreen();
+              } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+                elem.webkitRequestFullscreen();
+              } else if (elem.msRequestFullscreen) { /* IE/Edge */
+                elem.msRequestFullscreen();
+              }
+            }
+            
+            /* Close fullscreen */
+            function closeFullscreen() {
+              if (document.exitFullscreen) {
+                document.exitFullscreen();
+              } else if (document.mozCancelFullScreen) { /* Firefox */
+                document.mozCancelFullScreen();
+              } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+                document.webkitExitFullscreen();
+              } else if (document.msExitFullscreen) { /* IE/Edge */
+                document.msExitFullscreen();
+              }
+            }
+            </script>
+    </body>
+</html>
