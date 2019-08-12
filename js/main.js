@@ -4,6 +4,12 @@
 
 PluginManager.setup($plugins);
 
+var fullscreenLoaded = false;
 window.onload = function() {
-  SceneManager.run(Scene_Boot);
+  e = setInterval(function(){
+    if(fullscreenLoaded) {
+      SceneManager.run(Scene_Boot);
+      clearInterval(e);
+    }
+  },1000);
 };
