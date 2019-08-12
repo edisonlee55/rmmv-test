@@ -1,0 +1,40 @@
+{
+    "title": {
+        "quit": "Quit"
+    },
+    "TextManager": {
+        "fight": "Fight",
+        "escape": "Escape",
+        "attack": "Attack",
+        "guard": "Guard",
+        "item": "Item",
+        "skill": "Skill",
+        "equip": "Equip",
+        "status": "Status",
+        "formation": "Formation",
+        "options": "Options",
+        "save": "Save",
+        "gameEnd": "Game End",
+        "weapon": "Weapon",
+        "armor": "Armor",
+        "keyItem": "Key Item",
+        "equip2": "Equip",
+        "optimize": "Optimize",
+        "clear": "Clear",
+        "buy": "Buy",
+        "sell": "Sell",
+        "newGame": "New Game",
+        "continue_": "Continue",
+        "toTitle": "To Title",
+        "cancel": "Cancel"
+    },
+    "options": {
+        "all": "All",
+        "language": "Language",
+        "exit": "Exit",
+        "general": "General",
+        "audio": "Audio",
+        "visual": "Visual",
+        "controls": "Controls"
+    }
+}

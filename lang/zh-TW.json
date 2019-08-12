@@ -1,0 +1,40 @@
+{
+    "title": {
+        "quit": "退出"
+    },
+    "TextManager": {
+        "fight": "戰鬥",
+        "escape": "逃跑",
+        "attack": "攻擊",
+        "guard": "防禦",
+        "item": "道具",
+        "skill": "技能",
+        "equip": "裝備",
+        "status": "狀態",
+        "formation": "隊形",
+        "options": "選項",
+        "save": "保存",
+        "gameEnd": "遊戲結束",
+        "weapon": "武器",
+        "armor": "盔甲",
+        "keyItem": "關鍵道具",
+        "equip2": "裝備",
+        "optimize": "優化",
+        "clear": "清除",
+        "buy": "購買",
+        "sell": "出售",
+        "newGame": "新遊戲",
+        "continue_": "繼續",
+        "toTitle": "回到標題",
+        "cancel": "取消"
+    },
+    "options": {
+        "all": "全部",
+        "language": "語言",
+        "exit": "退出",
+        "general": "一般",
+        "audio": "聲音",
+        "visual": "畫面",
+        "controls": "控制"
+    }
+}

@@ -3,6 +3,10 @@
     src: url("FZZhunYuan-M02T.ttf");
 }
 
+/* body {
+    cursor: url("heart.cur"), default;
+} */
+
 .IIV::-webkit-media-controls-play-button,
 video::-webkit-media-controls-start-playback-button {
     opacity: 0;

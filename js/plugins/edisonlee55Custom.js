@@ -33,3 +33,47 @@ Window_Base.prototype.standardFontFace = function() {
       return 'GameFont';
   }
 };
+
+Bitmap.prototype.drawText = function(text, x, y, maxWidth, lineHeight, align) {
+  // Note: Firefox has a bug with textBaseline: Bug 737852
+  //       So we use 'alphabetic' here.
+  if (text !== undefined) {
+      var tx = x;
+      var ty = y + lineHeight - (lineHeight - this.fontSize * 0.7) / 2;
+      var context = this._context;
+      var alpha = context.globalAlpha;
+      maxWidth = maxWidth || 0xffffffff;
+      if (align === 'center') {
+          tx += maxWidth / 2;
+      }
+      if (align === 'right') {
+          tx += maxWidth;
+      }
+      context.save();
+      context.font = this._makeFontNameText();
+      context.textAlign = align;
+      context.textBaseline = 'alphabetic';
+      context.globalAlpha = 1;
+      //this._drawTextOutline(text, tx, ty, maxWidth);
+      context.globalAlpha = alpha;
+      this._drawTextBody(text, tx, ty, maxWidth);
+      context.restore();
+      this._setDirty();
+  }
+};
+
+Window.prototype._updateCursor = function() {
+  //var blinkCount = this._animationCount % 40;
+  var blinkCount = 1;
+  var cursorOpacity = this.contentsOpacity;
+  if (this.active) {
+      if (blinkCount < 20) {
+          //cursorOpacity -= blinkCount * 8;
+          cursorOpacity -= blinkCount * 70;
+      } else {
+          cursorOpacity -= (40 - blinkCount) * 8;
+      }
+  }
+  this._windowCursorSprite.alpha = cursorOpacity / 255;
+  this._windowCursorSprite.visible = this.isOpen();
+};
