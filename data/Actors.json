@@ -1,5 +1,5 @@
 [
 null,
 {"id":1,"battlerName":"Actor3_8","characterIndex":7,"characterName":"Actor3","classId":3,"equips":[3,1,2,3,0],"faceIndex":1,"faceName":"People1","traits":[],"initialLevel":1,"maxLevel":99,"name":"莉莉雅","nickname":"莉莉雅","note":"","profile":""},
-{"id":2,"battlerName":"NPC1","characterIndex":0,"characterName":"NPC1","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"NPC1","traits":[],"initialLevel":1,"maxLevel":99,"name":"雅莉克絲","nickname":"森之旅館管理人","note":"","profile":""}
+{"id":2,"battlerName":"NPC1","characterIndex":0,"characterName":"NPC1","classId":1,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"NPC1","traits":[],"initialLevel":1,"maxLevel":99,"name":"芳乃","nickname":"森之旅館管理人","note":"","profile":""}
 ]
